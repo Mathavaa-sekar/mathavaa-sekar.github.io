@@ -691,6 +691,11 @@ section {
 /* ===================================
    PROJECTS SECTION
    =================================== */
+   
+.projects-section {
+    background: var(--bg-secondary); /* Added gray background */
+}
+
 .project-full-card {
     background: var(--bg-card);
     padding: 2.5rem;
@@ -787,9 +792,7 @@ section {
 /* ===================================
    AWARDS SECTION
    =================================== */
-.awards-section {
-    background: var(--bg-secondary);
-}
+
 
 .award-card {
     background: var(--bg-card);
