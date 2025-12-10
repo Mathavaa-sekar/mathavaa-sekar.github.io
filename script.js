@@ -298,3 +298,49 @@ resumeButtons.forEach(button => {
         console.log(`Resume action: ${button.hasAttribute('download') ? 'Download' : 'View'}`);
     });
 });
+
+
+/* THEME TOGGLE (persisted) */
+(function () {
+    const THEME_KEY = 'site-theme'; // 'dark' or 'light'
+    const body = document.body;
+    const toggleBtn = document.getElementById('themeToggle');
+
+    if (!toggleBtn) return; // safety
+
+    // Set icon helper
+    function setIcon(theme) {
+        const icon = toggleBtn.querySelector('i');
+        if (!icon) return;
+        if (theme === 'light') {
+            icon.classList.remove('fa-moon');
+            icon.classList.add('fa-sun');
+        } else {
+            icon.classList.remove('fa-sun');
+            icon.classList.add('fa-moon');
+        }
+    }
+
+    // Apply theme (body class)
+    function applyTheme(theme) {
+        if (theme === 'light') {
+            body.classList.add('light-theme');
+        } else {
+            body.classList.remove('light-theme');
+        }
+        setIcon(theme);
+    }
+
+    // Load persisted theme or default to dark
+    const saved = localStorage.getItem(THEME_KEY);
+    const initialTheme = saved === 'light' ? 'light' : 'dark';
+    applyTheme(initialTheme);
+
+    // Attach click handler
+    toggleBtn.addEventListener('click', () => {
+        const current = body.classList.contains('light-theme') ? 'light' : 'dark';
+        const next = current === 'light' ? 'dark' : 'light';
+        localStorage.setItem(THEME_KEY, next);
+        applyTheme(next);
+    });
+})();
