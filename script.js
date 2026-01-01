@@ -298,3 +298,30 @@ resumeButtons.forEach(button => {
         console.log(`Resume action: ${button.hasAttribute('download') ? 'Download' : 'View'}`);
     });
 });
+
+// ------------------ Calculate Experience ------------------ //
+document.addEventListener('DOMContentLoaded', () => {
+    const firstMonth = new Date(2023, 3); // April 2023 -> Month is 0-indexed (0=Jan, 3=Apr)
+    const today = new Date();
+
+    let months = (today.getFullYear() - firstMonth.getFullYear()) * 12;
+    months += today.getMonth() - firstMonth.getMonth(); // month difference
+
+    const years = Math.floor(months / 12);
+    const remainingMonths = months % 12;
+
+    let experienceText = '';
+    if (years > 0 && remainingMonths > 0) {
+        experienceText = `${years} years ${remainingMonths} months`;
+    } else if (years > 0) {
+        experienceText = `${years} years`;
+    } else {
+        experienceText = `${remainingMonths} months`;
+    }
+
+    // Update the HTML dynamically
+    const expElem = document.getElementById('experience-years');
+    if (expElem) {
+        expElem.textContent = experienceText;
+    }
+});
