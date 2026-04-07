@@ -50,7 +50,7 @@
                     </h1>
                     <h2 class="hero-subtitle">Python Developer</h2>
 					<p class="hero-description">
-					    I specialize in automation, AI/ML, end-to-end web application development, and data analytics, with <b id="experience-years">2.5+ years</b> of hands-on experience. Proficient in Python frameworks, data processing, and backend development. Skilled in building production-grade solutions with strong problem-solving abilities and experience working in Linux environments and managing backend systems and data workflows.
+						I specialize in building scalable, production-grade applications using Python, with expertise in AI/ML, automation, and data-driven systems. With <b id="experience-years">3+ years</b> of hands-on experience, I work across Python frameworks, microservices architecture, and full end-to-end development, including deployment and integration of robust backend systems. I have strong experience in data processing, REST APIs, databases, and Linux environments, and focus on delivering efficient, reliable solutions that solve real business problems.
 					</p>
                 </div>
                 
@@ -64,7 +64,7 @@
                             <h4>Resume</h4>
                         </div>
                         <div class="resume-compact-actions">
-                            <a href="assets/Mathavaasekar_Python_Resume.pdf" target="_blank" class="icon-btn" title="View Resume">
+                            <a href="assets/Mathavaasekar_python_resume.pdf" target="_blank" class="icon-btn" title="View Resume">
                                 <i class="fas fa-eye"></i>
                             </a>
                         </div>
@@ -156,9 +156,12 @@
                         <span class="skill-tag">HTML</span>
                         <span class="skill-tag">CSS</span>
 						<span class="skill-tag">PostgreSQL</span>
+						<span class="skill-tag">Swagger</span>
+						<span class="skill-tag">Docker</span>
 						<span class="skill-tag">Vector Databases</span>
 						<span class="skill-tag">Retrieval-Augmented Generation (RAG)</span>
 						<span class="skill-tag">Natural Language Processing (NLP)</span>
+						<span class="skill-tag">Large Language Models (LLMs)</span>
 						<span class="skill-tag">Jupyter Notebook</span>
 						<span class="skill-tag">AWS (EC2, S3)</span>
                     </div>
@@ -206,9 +209,9 @@
                         </div>
                         <ul class="timeline-list">
 							<li>Develop and deploy full-stack web applications and dashboards using Python, Django, Dash, FastAPI, and Flask, delivering end-to-end solutions across the application</li>
-                            <li>Build and maintain scalable web application architectures and microservices-based components with efficient database management and reliable backend systems to ensure smooth functioning of applications</li>
-                            <li>Apply machine learning models to analyze data and generate actionable business insights</li>
-							<li>Integrate AI-driven functionalities into web applications to enhance user experience and application intelligence</li>
+                            <li>Build and integrate LLM, RAG, and Generative AI solutions, including fine-tuning and integrating locally deployed models</li>
+                            <li>Integrate AI-driven capabilities and machine learning models into applications for data analysis, predictive insights, automation, and intelligent decision-making</li>
+							<li>Build and maintain scalable web application architectures and microservices-based components with efficient database management and reliable backend systems to ensure smooth functioning of applications</li>
                         </ul>
                     </div>
                 </div>
@@ -222,10 +225,10 @@
                             <span class="duration">April 2023 - February 2025</span>
                         </div>
                         <ul class="timeline-list">
-                            <li>Developed and implemented automation scripts for data processing, analysis, and system monitoring using Python and Bash</li>
-                            <li>Performed backend reconciliation and log analysis to troubleshoot operational issues</li>
-                            <li>Monitored production servers and network systems to ensure uptime and service reliability</li>
-							<li>Enhanced operational transparency by creating detailed reports and dashboards for internal stakeholders</li>
+                            <li>Developed and implemented automation scripts for data processing, analysis, and system monitoring using Python and Bash in a Linux environment</li>
+                            <li>Performed backend reconciliation and log analysis to troubleshoot and resolve operational and customer-reported issues</li>
+                            <li>Monitored system infrastructure, including physical servers, to ensure uptime, detect anomalies, and maintain overall service reliability</li>
+							<li>Automated report generation and performed data analysis on system data to derive meaningful insights for stakeholders</li>
                         </ul>
                     </div>
                 </div>
@@ -236,7 +239,7 @@
 	<!-- Projects Section -->
 	<section id="projects" class="projects-section">
 		<div class="container">
-			<h2 class="section-title">Major Projects</h2>
+			<h2 class="section-title">Projects</h2>
 			
 			<div class="project-full-card featured">
 				<div class="project-header">
@@ -277,10 +280,17 @@
 						<i class="fas fa-chart-pie"></i>
 					</div>
 				</div>
+
 				<h3>Intelligent Data Visualization & Analytics Dashboard</h3>
+
 				<p class="project-description">
-    				Developed a comprehensive web-based analytics application enabling users to create highly interactive dashboards with Python-based expressions and dynamic filters. Enabled intuitive data exploration through NLP and generative AI capabilities while integrating multiple diverse data sources into a cohesive system for seamless analytics.
+					Developed a comprehensive web-based data analytics application that enables users to create highly interactive dashboards using Python-based expressions and dynamic filters, supporting in-depth analysis of complex datasets.
 				</p>
+
+				<div class="project-description">
+					Enabled intuitive and efficient data exploration through NLP and generative AI capabilities while integrating multiple diverse data sources into a single, cohesive, and user-friendly system for seamless analytics and reporting.
+				</div>
+
 				<div class="project-highlights">
 					<div class="highlight">
 						<i class="fas fa-palette"></i>
@@ -291,10 +301,11 @@
 						<span>Multi-Source Integration</span>
 					</div>
 					<div class="highlight">
-						<i class="fas fa-brain"></i>
-						<span>Generative AI Insights</span>
+						<i class="fas fa-filter"></i>
+						<span>NLP + AI Enabled</span>
 					</div>
 				</div>
+
 				<div class="project-tech">
 					<span class="tech-tag">Django</span>
 					<span class="tech-tag">Flask</span>
@@ -303,6 +314,37 @@
 					<span class="tech-tag">Pandas</span>
 					<span class="tech-tag">SQL</span>
 					<span class="tech-tag">AWS</span>
+				</div>
+			</div>
+
+			<div class="project-full-card">
+				<div class="project-header">
+					<div class="project-icon">
+						<i class="fas fa-users"></i>
+					</div>
+				</div>
+
+				<h3>AI-Powered Applicant Tracking System (ATS)</h3>
+
+				<p class="project-description">
+					Designed and developed a web-based ATS system that extracts candidate details from resumes using a fine-tuned LLM, enabling automatic profile creation.
+				</p>
+
+				<p class="project-description">
+					Leveraged vector embeddings and Retrieval-Augmented Generation (RAG) to match candidates with job descriptions, generate insights, and identify potential red flags, reducing recruiter effort and sourcing time.
+				</p>
+
+				<p class="project-description">
+					Enabled seamless communication and workflow automation through Teams and Outlook integration.
+				</p>
+
+				<div class="project-tech">
+					<span class="tech-tag">LLM</span>
+					<span class="tech-tag">RAG</span>
+					<span class="tech-tag">Vector DB</span>
+					<span class="tech-tag">FastAPI</span>
+					<span class="tech-tag">Python</span>
+					<span class="tech-tag">Automation</span>
 				</div>
 			</div>
 
@@ -337,6 +379,39 @@
 					<span class="tech-tag">Paramiko</span>
 					<span class="tech-tag">Linux</span>
 					<span class="tech-tag">REST APIs</span>
+				</div>
+			</div>
+
+			<div class="project-full-card">
+				<div class="project-header">
+					<div class="project-icon">
+						<i class="fas fa-chess"></i>
+					</div>
+				</div>
+
+				<h3>Custom Chess Engine with Web Interface (Personal Project)</h3>
+
+				<p class="project-description">
+					Developed a web-based chess application powered by a custom chess engine with optimized move generation, evaluation heuristics, and depth-based search techniques including minimax, alpha-beta pruning, and quiescence search.
+				</p>
+
+				<p class="project-description">
+					Deployed the application as a live web application for interactive gameplay.
+				</p>
+
+				<div class="project-actions">
+					<a href="https://hannibal-chess.onrender.com" target="_blank" class="project-btn">
+						<i class="fas fa-external-link-alt"></i>
+						Play Live Game
+					</a>
+				</div>
+			
+				<div class="project-tech">
+					<span class="tech-tag">Python</span>
+					<span class="tech-tag">Algorithms</span>
+					<span class="tech-tag">Minimax</span>
+					<span class="tech-tag">Alpha-Beta Pruning</span>
+					<span class="tech-tag">Web Deployment</span>
 				</div>
 			</div>
 
@@ -467,7 +542,7 @@
         <div class="container">
             <div class="footer-content">
                 <p class="footer-quote">Powered by curiosity. Sharpened by learning.</p>
-                <p class="footer-copyright">© 2026 Mathavaa Sekar</p>
+                <p class="footer-copyright">© 2025 Mathavaa Sekar</p>
             </div>
         </div>
     </footer>
@@ -475,9 +550,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
