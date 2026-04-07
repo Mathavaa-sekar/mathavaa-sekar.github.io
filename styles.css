@@ -1070,6 +1070,52 @@ section {
     background: linear-gradient(135deg, #6a5af9, #4a90e2);
 }
 
+.project-btn-wrapper {
+    position: relative;
+    display: inline-block;
+	margin-bottom: 10px;
+}
+
+/* Tooltip text */
+.project-tooltip {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    bottom: 130%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    background: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    
+    font-size: 12px;
+    white-space: nowrap;
+    
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 10;
+}
+
+/* Tooltip arrow */
+.project-tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    border-width: 6px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.85) transparent transparent transparent;
+}
+
+/* Show on hover */
+.project-btn-wrapper:hover .project-tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
 /* ===================================
    ANIMATIONS
    =================================== */
